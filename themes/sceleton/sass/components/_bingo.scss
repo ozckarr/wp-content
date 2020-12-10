@@ -1,0 +1,104 @@
+
+
+.bingo-wrapper{
+	outline: 0.1em solid black;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	.bingo-box{
+	outline: 0.1em solid black;
+	width: 20%;
+	word-break: break-all;
+	hyphens: auto;
+	text-align: center;
+	background-color: white;
+	position: relative;
+	  p{
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		top: 50%;
+		text-align: center;
+		width: calc(100% - 1em);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		margin: 0 0.5em;
+	  }
+	  	&:after {
+			content: "";
+			display: block;
+			padding-bottom: 100%;
+		}
+		.bingo-box-checked{
+			background-image: url("images/cross.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			height: 100%;
+			width: 100%;
+			opacity: 0.5;
+			position: absolute;
+			height: 100%;
+			width: 100%;
+		}
+	}
+}
+
+.bingo-square-container{
+	position: relative;
+	margin: 1em 0 0 0;
+	.bingo-square-content{
+		position: absolute;
+		display: flex;
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-between;
+		display: none;
+		.bingo-square-content-description{
+			h3{
+				margin: 0;
+			}
+		}
+		.bingo-square-content-box-container{
+			position: relative;
+			display: none;
+			.bingo-square-content-box{
+				height: 10em;
+				width: 10em;
+				border: black solid 0.3em;
+				position: relative;
+				border-radius: 1em;
+				p{
+					position: absolute;
+					top: 50%;
+					text-align: center;
+					width: calc(100% - 1em);
+					-ms-transform: translateY(-50%);
+					transform: translateY(-50%);
+					margin: 0 0.5em;
+					font-size: 22px;
+				}
+			}
+			
+			.bingo-square-check{
+				position: absolute;
+				bottom: 0.7em;
+				left: -1em;
+				height: 2.5em;
+				width: 2.5em;
+				border-radius: 0.3em;
+				border: black solid 0.3em;
+				background-image: url("images/cross.png");
+				background-color: white;
+				background-size: cover;
+			}
+		}
+	}
+}
+		
+.bingo-box-selected{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	border: 0.4em solid black;
+}

@@ -1,0 +1,74 @@
+/*!
+Theme Name: The Sceleton theme
+Theme URI: https://www.tigerton.se
+Author: Jonathan de Jong @ Tigerton
+Author URI: https://www.tigerton.se
+Description: "bony framework of the body", a theme for quick and modern development with Tigerton!
+Text Domain: sceleton
+Version: 2.0
+*/
+
+@import 'libraries/sanitize';
+@import 'libraries/defaults';
+@import 'libraries/mixins';
+@import 'libraries/functions';
+@import 'variables';
+
+body {
+	font-family: $font-stack;
+	color: $offblack;
+}
+
+/**
+ * Icon css
+ */
+@import 'icons';
+
+/**
+ * Typography
+ */
+@import 'typography';
+
+/**
+ * Wrappers
+ */
+.wrapper {
+	@extend .clearfix;
+	max-width: 500px;
+	margin: 0 auto;
+
+}
+
+.inner-wrapper{
+	@extend .wrapper;
+	max-width: 750px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/**
+ * Header
+ */
+@import 'components/header';
+
+
+/**
+ * General components
+ */
+@import 'components/general';
+
+/**
+ * Footer
+ */
+@import 'components/footer';
+
+
+/**
+ * Bingo
+ */
+ @import 'components/bingo';
+
+/**
+ * Print
+ */
+@import 'print';

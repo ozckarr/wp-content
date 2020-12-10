@@ -1,0 +1,45 @@
+.header{
+	height: 5em;
+	.header-text{
+		h1{
+			font-size: 4em;
+		}
+	}
+	.non-front-page-header{
+		display: flex;
+		.logotype img{
+			height: 6em;
+
+		}
+		.header-text{
+			margin: 0.35em 0 0 .5em;
+			h1{
+				font-size: 2.65em;
+			}
+			h3{
+				margin: 0;
+				font-size: 1.2em;
+			}
+		}
+	}
+}
+
+.logotype{
+	display: block;
+}
+
+.menu-main-list{
+	float: left;
+
+	li{
+		display: block;
+		float: left;
+	}
+
+	a{
+		padding:10px 15px;
+		display: block;
+		text-decoration: none;
+	}
+
+}
